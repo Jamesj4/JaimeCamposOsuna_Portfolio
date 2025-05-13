@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Editor plugins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Custom Editor plugins</h1>
+    <a href="index.html" class="btn back">← Back to Portfolio</a>
+  </header>
+
+  <!-- GENERAL INTRO -->
+  <section class="intro">
+  
+
+ 
+
+<!-- SECTION 1: Editor de nodos base -->
+<section class="project-split_Horizontal">
+    <div class="project-text">
+      <h2>⚙️ Modular Custom Base Plugin</h2>
+      <p>
+       This is a project I am currently developing with a colleague. We both handle various tasks, but primarily, I focus on the visual (using Slate Unreal Framework) and editor logic, while he works on the runtime logic.  The goal is to develop multiple plugins based on our framework. We are already working on plugins like Dialogue Systems and Conditions, which are being built on top of this base. Following best programming practices, the foundation is modular and scalable. For example, the nodes are designed as objects, allowing users to inherit and customize them in Blueprint. Nearly everything in the plugin is customizable and adaptable to suit various needs.
+      </p>
+    </div>
+    <div class="media-grid_Double">
+      <div class="media-item">
+        <video src="Resources/Videos/Editor Plugin/Preview.mp4" controls muted></video>
+        <p>Node and Objects overview</p>
+      </div>
+    
+    </div>
+
+    
+  </section>
+   </section>
+
+
+  <!-- SECTION 3: Alien -->
+  <section class="project-split alt">
+    <div class="project-text">
+      <h2>⚙️ Plugin Features</h2>
+      <p>
+       This plugin is modular and scalable. We have developed several features within it, including a debug system that mimics Unreal's Behavior Tree system. This feature displays real-time, custom properties when hovering over objects. Additionally, we implemented a recursive node search system (which allows finding information within child nodes) designed to be as efficient as possible. Furthermore, we included a compiler that alerts the user of errors, enabling them to quickly navigate to the exact issue in the graph.
+      </p>
+    </div>
+    
+    <div class="media-grid">
+        <div class="media-item">
+            <img src="Resources/Videos/Editor Plugin/Debug.gif"class="clickable-img">
+            <p>Debug system</p>
+        </div>
+        <div class="media-item">
+            <img src="Resources/Videos/Editor Plugin/NodeSearch.gif"class="clickable-img">
+            <p>Recursive Node/Object Search</p>
+        </div>
+        <div class="media-item">
+          <img src="Resources/Videos/Editor Plugin/Compile.gif"class="clickable-img">
+          <p>Compiler</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Jaime Campos Osuna</p>
+  </footer>
+
+
+   <!-- Modal for images -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="modal.js"></script>
+
+</body>
+</html>

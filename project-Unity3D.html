@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myrmica - Project</title>
+  <link rel="stylesheet" href="style_02.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Unity 3D Demo</h1>
+    <a href="index.html" class="btn back">← Back to Portfolio</a>
+  </header>
+
+  <!-- INTRO SECTION -->
+  <section class="intro">
+   <section class="intro">
+    <h2>Developed the entire AI state machines, procedural animation, character movement, physic slingshot system and inventory.</h2>
+    <p class="highlight">Project in collaboration with five other artists as part of my Higher Vocational Education at AJEI</p>
+    
+    <div class="video-wrapper">
+      <iframe width="100%" height="400" src="Resources/Videos/Unity/Whami/Bath.gif" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="grid-container">
+
+    <!-- SECTION 1: Procedural Walking -->
+    <section class="card">
+      <div class="project-text">
+        <h2>🕷️ Procedural Walking</h2>
+        <p>
+          Since we didn’t have a dedicated animator, we opted to implement procedural movement for one of our two characters. This character moves in a spider-like fashion, seamlessly navigating walls and ceilings. The movement is powered by a procedural system that dynamically adapts to the environment. The video on the right showcases some of the development process behind it
+        </p>
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Procedural Animation.mp4" controls muted></video>
+          <p>Procedural floor / ceiling walking</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: AI -->
+    <section class="card_double">
+      <div class="project-text">
+        <h2>🧠 Boss AI and State Machines</h2>
+        <p>
+          The game features two main bosses, both built using a modular and inheritable state machine system. Their behavior includes patrolling, chasing the player, entering alert mode, and attacking. This structure allows for easily extending or tweaking AI behaviors across different enemies.
+        </p>
+       
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <img src="Resources/Videos/Unity/Whami/BigBoss.gif" alt="Big Boss" class="clickable-img">
+          <p>Prototype</p>
+        </div>
+        <div class="media-item">
+          <img src="Resources/Videos/Unity/Whami/Movement.gif" alt="Big Boss" class="clickable-img">
+          <p>Level Integration</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Slingshot -->
+    <section class="card">
+      <div class="project-text">
+        <h2>🚀 Projectile Launch System</h2>
+        <p>
+           I created a projectile launch system where the player holds the R2 button to increase the projectile’s force. The longer the button is held, the more power the shot has. The trajectory is calculated by simulating physics in a separate scene, with the path displayed in real time to help the player aim and adjust their shots accurately.
+        </p>
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Whami/Slingshot.mp4" controls muted></video>
+          <p>Slingshot explanation video</p>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- SECTION 4: Inventory -->
+    <section class="card">
+      <div class="project-text">
+        <h2>🎒 Inventory System</h2>
+        <p>
+            The player needs to collect various types of ammunition, items, keys, a diary, and unlockables. To handle this, I developed a flexible and generic inventory system using Scriptable Objects. This approach allows easy management and expansion of different item types, ensuring the system is scalable and efficient for future content.
+        </p>
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Whami/Inventory.mp4" controls muted></video>
+          <p>Inventory explanation video</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Jaime Campos Osuna</p>
+  </footer>
+
+
+  
+     <!-- Modal for images -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myrmica - Project</title>
+  <link rel="stylesheet" href="style_02.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Unity 2D Demo</h1>
+    <a href="index.html" class="btn back">← Back to Portfolio</a>
+  </header>
+
+  <!-- INTRO SECTION -->
+  <section class="intro">
+    <P>
+      In this one-month Metroidvania-style project developed in collaboration with two artists, I was responsible for all the game programming.
+    </P>
+    <div class="video-wrapper">
+      <iframe width="100%" height="400" src="Resources/Videos/Unity/Collector/Mechanics.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="grid-container">
+
+    <!-- SECTION 1: Movement & AI -->
+    <section class="card">
+      <div class="project-text">
+        <h2>🕹️ Responsive Movement & 2D Pathfinding AI in Unity</h2>
+        <p>
+          For this Metroidvania-style project, we needed a player character with extremely responsive and fluid movement, as the core gameplay revolves around mobility and precision. I developed a custom 2D controller that supports tight, snappy controls and smooth transitions for a satisfying traversal experience.
+        </p>
+        <p>
+          In addition to the player movement system, I implemented two types of AI: one for grounded enemies and another for flying creatures. The flying AI uses a custom 2D pathfinding system that allows it to navigate freely around obstacles and dynamically follow the player through environments.
+        </p>
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Collector/AI_Movement.mp4" controls muted></video>
+          <p>AI Pathfinding and Character Movement</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Combat -->
+    <section class="card">
+      <div class="project-text">
+        <h2>⚔️ Combat System with Boss</h2>
+        <p>
+          I designed and implemented a flexible combat system featuring combo mechanics and enemy reactions, tailored for both regular enemies and boss encounters.
+        </p>
+        <p>
+          One highlight is the crab boss, which uses a state machine to control its behavior. As the fight progresses, the boss dynamically increases its difficulty — adapting its patterns and aggressiveness based on how long the player has been engaged in combat. This creates a tension curve that keeps players on their toes and rewards mastery of the combat mechanics.
+        </p>
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Collector/Attack.mp4" controls muted></video>
+          <p>Combat and Boss Mechanics</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Unlockable Ability -->
+    <section class="card_double">
+      <div class="project-text">
+        <h2>🌀 Unlockable Ability: Gravity Shift</h2>
+        <p>
+          This section showcases an unlockable ability that alters the player’s physical weight. By switching to a heavier state, the character gains increased gravity, enabling them to break through obstacles and reach previously inaccessible areas.
+        </p>
+       
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Collector/Movement_Power.mp4" controls muted></video>
+          <p>Prototype</p>
+        </div>
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Collector/Water.mp4" controls muted></video>
+          <p>Level Integration</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Save System and UI -->
+    <section class="card">
+      <div class="project-text">
+        <h2>💬 Save System & UI Settings</h2>
+        <p>
+          The game features a complete save and checkpoint system, allowing players to resume progress seamlessly. It also includes a fully functional UI menu with various settings, such as volume control and gameplay options.
+        </p>
+      </div>
+      <div class="media-grid_Single">
+        <div class="media-item">
+          <video src="Resources/Videos/Unity/Collector/Save.mp4" controls muted></video>
+          <p>Save System & Settings UI</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Jaime Campos Osuna</p>
+  </footer>
+
+</body>
+</html>
