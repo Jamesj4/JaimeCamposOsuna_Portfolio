@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Myrmica - Project</title>
-  <link rel="stylesheet" href="style_02.css" />
+  <link rel="stylesheet" href="style_CardBased.css" />
 </head>
 <body>
 
@@ -40,7 +40,7 @@
       </div>
       <div class="media-grid_Single">
         <div class="media-item">
-          <video src="Resources/Videos/Unity/Collector/AI_Movement.mp4" controls muted></video>
+          <img src="Resources/Videos/Unity/Collector/AI_Movement.gif" alt="AI Movement" class="clickable-img">
           <p>AI Pathfinding and Character Movement</p>
         </div>
       </div>
@@ -96,7 +96,7 @@
       </div>
       <div class="media-grid_Single">
         <div class="media-item">
-          <video src="Resources/Videos/Unity/Collector/Save.mp4" controls muted></video>
+          <img src="Resources/Videos/Unity/Collector/Save.gif" alt="Save" class="clickable-img">
           <p>Save System & Settings UI</p>
         </div>
       </div>
@@ -108,6 +108,15 @@
   <footer>
     <p>© 2025 Jaime Campos Osuna</p>
   </footer>
+
+
+    <!-- Modal for images -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="modal.js"></script>
 
 </body>
 </html>
