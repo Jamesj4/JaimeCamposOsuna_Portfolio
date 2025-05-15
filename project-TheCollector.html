@@ -20,7 +20,9 @@
       In this one-month Metroidvania-style project developed in collaboration with two artists, I was responsible for all the game programming.
     </P>
     <div class="video-wrapper">
-      <iframe width="100%" height="400" src="Resources/Videos/Unity/Collector/Mechanics.mp4" frameborder="0" allowfullscreen></iframe>
+          <video width="100%" height="400" controls>
+            <source src="Resources/Videos/Unity/Collector/Mechanics.mp4" type="video/mp4">
+          </video>
     </div>
   </section>
 
@@ -117,6 +119,11 @@
   </div>
 
   <script src="modal.js"></script>
+
+  <script>
+  const video = document.querySelector('video');
+  video.volume = 0.5; 
+</script>
 
 </body>
 </html>
